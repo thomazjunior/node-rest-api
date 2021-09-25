@@ -21,7 +21,6 @@ app.use(morgan("common"));
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 
-
 app.get("/", (req, res) => {
   res.send("Welcome to homepage");
 });
@@ -33,3 +32,5 @@ app.get("/users", (req, res) => {
 app.listen(8800, () => {
   console.log("Backend server is runing!");
 });
+
+
